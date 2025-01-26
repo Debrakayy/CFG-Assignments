@@ -9,12 +9,14 @@ I am  a **Chemical Engineering graduate** with an interest in **Data Analytics**
 In 2023, I completed a Google course in **Cybersecurity** also it was a bit challenging to balance work with this course I was able to make a plan and organise my time appropriately so I don't get overwhelmed and at the end of the degree I got a certificate to show my completion. 
 
 
+<img src="Images/GoogleCertificate.png" alt="Description of Image" width="300" height="300">
+
 
 
 I am also currently doing a work based apprenticeship in **Data Analytics** and did a MOOC in **IA & Security**, which further peaked my interest in tech.
 ___
 ## Skills
-- **Technical**: Cybersecurity Fundamentals
+- **Technical**: Cybersecurity Fundamentals,troubleshooting 
 - **Soft skills**: Analytical thinking skills, Collaboration, Communication, Attention to Detail
 - **Certifications**: CompTIA Security+ (in progress), 
 ## Using GitHub
