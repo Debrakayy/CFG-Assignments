@@ -19,6 +19,8 @@ ___
 - **Technical**: Cybersecurity Fundamentals,troubleshooting 
 - **Soft skills**: Analytical thinking skills, Collaboration, Communication, Attention to Detail
 - **Certifications**: CompTIA Security+ (in progress), 
+
+___
 ## Using GitHub
  I plan on using GitHub:
 1. To create a professional Portfolio
@@ -27,12 +29,12 @@ ___
 ___
 
 ## Hobbies and Interests 
-Some of my hobbies and interests include; cooking for friends and family and also hosting people for small gatherings.I enjoy going to the gym as it gives me a form of clarity and peace of mind and I love to travel when I get the time as it's also an escape from my busy schedule and most importantly I enjoy experiencing new cultures and meeting new people
+Some of my hobbies and interests include; cooking for friends and family and also hosting people for small gatherings.I enjoy going to the gym as it gives me a form of clarity and peace of mind and I love to travel when I get the time as it's also an escape from my busy schedule and most importantly I enjoy experiencing new cultures and meeting new people.
 
 
-| Cooking                                                                |                              Gym                               |                                                             Travel |
-|:-----------------------------------------------------------------------|:--------------------------------------------------------------:|-------------------------------------------------------------------:|
-| <img src="Images/Cooking.jpeg" alt="Cooking" width="100" height="100"> | <img src="Images/Gym.jpeg" alt="Gym" width="100" height="100"> | <img src="Images/Italy.JPG" alt="Travel" width="100" height="100"> |
+| Cooking                                                                | Gym                                                            |                               Travel                                |
+|:-----------------------------------------------------------------------|:---------------------------------------------------------------|:-------------------------------------------------------------------:|
+| <img src="Images/Cooking.jpeg" alt="Cooking" width="100" height="100"> | <img src="Images/Gym.jpeg" alt="Gym" width="100" height="100"> | <img src="Images/Italy.JPG" alt="Travel" width="100" height="100">  |
 
  
 
