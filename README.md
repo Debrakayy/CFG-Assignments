@@ -23,6 +23,6 @@ ___
 
 ## Hobbies and Interests 
 
-![IMG_1464.JPG](Images/IMG_1464.JPG)
+<img src="Images/IMG_1464.JPG" alt="Description of Image" width="300">
 
 
