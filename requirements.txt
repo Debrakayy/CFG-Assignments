@@ -1,9 +1,1 @@
-Assesment 1
 
-I completed my first assesment with CFG and added the files to the repository
-
-the requirement.txt file is a file containing plain text, it is the simplest format for storing and sharing information.
-
-A gitignore file is used to signal git on what files to ignore, these files are not staged,committed and will not show in the working diretory.
-
-I have added screenshots to the branch as evidence.
