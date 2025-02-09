@@ -3,4 +3,4 @@ using the API,this provided length and special key constraints
 the password also need to contain uppercase lowercase, and numbers to ensure security
 splicing was also used to ensure the password was not too long
 the code will selecta password till a valid answer was achieved.
- Generated Password: d7&f^6.3,B@FjQ 
+ Generated Password: #)GXAh_13CiDmn 
