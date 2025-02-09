@@ -2,5 +2,5 @@ I have generated a code which helps a user to select a strong password
 using the API,this provided length and special key constraints
 the password also need to contain uppercase lowercase, and numbers to ensure security
 splicing was also used to ensure the password was not too long
-the code will selecta password till a valid answer was achieved.
- Generated Password: #)GXAh_13CiDmn 
+the code will select a password till a valid answer was achieved.
+ Generated Password: <.2n7(,2989&>,, user password :<function new_password at 0x1028ec900> 
