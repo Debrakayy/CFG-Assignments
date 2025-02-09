@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mySQL code",
+            "connectionTimeout": 30,
+            "password": "2000debra",
+            "database": "GroceryStoreDB",
+            "username": "root"
+        }
+    ]
+}
