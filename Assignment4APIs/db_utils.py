@@ -18,7 +18,7 @@ def _connect_to_db():
 
 
 def get_all_records(): # retrieve all records from the 'users'
-    privacy_db = 'tests'
+    db_connection =None
     try:
         db_connection = _connect_to_db()
         cur = db_connection.cursor()
@@ -43,36 +43,35 @@ def get_all_records(): # retrieve all records from the 'users'
             print("DB connection is closed")
 
 
-def execute_user(new_user_dict):
+def execute_user(new_user_dict): #this is used to add a new user to the database
     db_connection = None
     try:
         db_connection = _connect_to_db()
         cur = db_connection.cursor()
         print("Connected to DB: %s" % DATABASE)
 
-        query = f"""
-         INSERT INTO users (name, email, request_type, request_status)
-         VALUES ('{new_user_dict['name']}', '{new_user_dict['email']}', {new_user_dict['request_type']}, {new_user_dict.get['request_status','PENDING']})
-         """
+        query = """
+            INSERT INTO users (name, email, request_type, request_status)
+            VALUES (%s, %s, %s, %s)
+        """
+        cur.execute(query, (
+            new_user_dict['name'],
+            new_user_dict['email'],
+            new_user_dict['request_type'],
+            new_user_dict['request_status']
+        ))
 
-        # Execute the query
-        cur.execute(query)
-
-        # Commit the transaction to make the changes in the database
         db_connection.commit()
-
         print("User added successfully!")
 
-        query = """SELECT * FROM users"""
-        cur.execute(query)
-        result = cur.fetchall()  # this is a list with db records where each record is a tuple
+        cur.execute("SELECT * FROM users") # fetch and return all users
+        result = cur.fetchall()
 
         cur.close()
-
         return result
 
     except Exception:
-        raise DbConnectionError("Failed to read data from DB")
+        raise DbConnectionError("Failed to write to DB")
 
     finally:
         if db_connection:
@@ -80,22 +79,23 @@ def execute_user(new_user_dict):
             print("DB connection is closed")
 
 
-def delete_users_by_id(user_id):
+def delete_users_by_id(user_id): #delete a user by ID from the 'users' table and return remaining records.
     try:
         db_connection = _connect_to_db()
         cur = db_connection.cursor()
         print("Connected to DB: %s" % DATABASE)
 
-        del_query = """DELETE FROM students WHERE student_id = {}""".format(user_id)
-        cur.execute(del_query)
+        del_query = "DELETE FROM users WHERE user_id = %s"
 
-        db_connection.commit()  # IMPORTANT!!! Commit the transaction to apply the deletion
+        cur.execute(del_query, (user_id,))
 
-        # you can leave little messages for yourself and debugging like this
+        db_connection.commit()  # Commit the transaction to apply the deletion
+
+        # debugging message
         print(f"Record with user_id {user_id} deleted successfully.")
 
 
-        select_query = "SELECT * FROM students"
+        select_query = "SELECT * FROM users"
         cur.execute(select_query)
         remaining_records = cur.fetchall()  # Get all remaining records
         cur.close()

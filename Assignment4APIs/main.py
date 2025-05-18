@@ -1,5 +1,5 @@
 import requests
-import json,APIs
+import json
 
 BASE_URL = "http://127.0.0.1:5000"  # Base API URL
 
@@ -71,15 +71,26 @@ def delete_user_by_id(user_id):
 if __name__ == "__main__":
     print("Client-side API Interaction")
 
-    # Test GET all users
-    users = get_all_users_front_end()
-    if users:
-        print("Users:", users)
+while True:
+    print("\nWhat would you like to do?")
+    print("1. View all users")
+    print("2. Add a user")
+    print("3. Delete a user")
+    print("4. Exit")
 
-    # Test POST (Adding a new user)
-    add_user()
+    choice = input("Enter choice (1-4): ").strip()
 
-    # Test DELETE (Removing a user)
-    user_id = input("Enter the ID of the user to delete: ")
-    delete_user_by_id(user_id)
-
+    if choice == "1":
+        users = get_all_users_front_end()
+        if users:
+            print("Users:", users)
+    elif choice == "2":
+        add_user()
+    elif choice == "3":
+        user_id = input("Enter the ID of the user to delete: ")
+        delete_user_by_id(user_id)
+    elif choice == "4":
+        print("Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please select 1-4.")

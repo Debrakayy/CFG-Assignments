@@ -31,7 +31,6 @@ Before running the API, ensure you have the following installed:
 ```sql
 CREATE DATABASE privacy_db;
 ```
-
 2. Edit the `config.py` file with your database credentials:
 ```python
 USER = "your_mysql_user"

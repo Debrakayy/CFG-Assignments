@@ -20,10 +20,11 @@ def get_all_users():
 @app.route("/api/users/remove/<int:id>", methods=["DELETE"])
 def del_user_by_id(id):
     try:
-        deleted_users = delete_users_by_id(id)  # Fetch remaining users after deletion
-        if deleted_users is not None:
-            return jsonify({"message": f"User with ID {id} deleted successfully"}), 200
-        return jsonify({"error": "User not found"}), 404
+        deleted_users= delete_users_by_id(id)  # Fetch remaining users after deletion
+        return jsonify({
+            "message": f"User with ID {id} deleted successfully",
+            "remaining_users": deleted_users
+        }), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
